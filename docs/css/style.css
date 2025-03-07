@@ -193,7 +193,7 @@ CREATE
 .section-detail .box .media {
     flex-shrink: 0;
     width: 50%;
-    height: 200px;
+    height: auto;
 }
 
 .section-detail .music-text {
