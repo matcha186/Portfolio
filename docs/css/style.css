@@ -194,6 +194,7 @@ CREATE
     flex-shrink: 0;
     width: 50%;
     height: auto;
+    text-align: center;
 }
 
 .section-detail .music-text {
@@ -225,7 +226,6 @@ CREATE
     outline: none;
 }
 
-
 .slider button.arrow-common {
     width: 0;
     height: 0;
@@ -242,10 +242,17 @@ CREATE
     border-width: 15px 15px 15px 0;
     border-color: transparent #000000 transparent transparent;
 }
+
 .slider button.arrow-next {
     right: -8%;
     border-width: 15px 0 15px 15px;
     border-color: transparent transparent transparent #000000;
+}
+
+.codec {
+    font-size: 0.75em;
+    color: #525252;
+    vertical-align: top;
 }
 
 /* ---------------------------------------------
