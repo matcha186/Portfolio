@@ -205,6 +205,21 @@ h1 {
     font-family: "DotGothic16", sans-serif;
 }
 
+.mr_font {
+    font-family: "DotGothic16", sans-serif;
+    letter-spacing: 5px;
+}
+
+.hoshi_font {
+    font-family: "游ゴシック Medium", sans-serif;
+    letter-spacing: 1px;
+}
+
+.music_font {
+    font-family: "Open sans", sans-serif;
+    letter-spacing: 1px;
+}
+
 /* ---------------------------------------------
 About
 --------------------------------------------- */
@@ -217,12 +232,12 @@ About
 }
 
 .section-about-detail {
-    flex: 3;  /* 左側を60%にする */
+    flex: 3;
     padding: 15px;
 }
 
 .section-image {
-    flex: 2;  /* 右側を40%にする */
+    flex: 2;
     padding: 15px;
 }
 
@@ -235,17 +250,66 @@ About
     text-align: center;
 }
 
+.sns-icon-area {
+    display: flex;
+    justify-content: center;
+}
+
+.sns-icon {
+    width: 50px;
+    margin: 0 15px;
+}
+
 /* ---------------------------------------------
-Details
+Details / Listen
 --------------------------------------------- */
 
 #details {
     background-color: #f5f5f5;
 }
 
+#listen {
+    background-color: #f5f5f5;
+}
+
+.section-music {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-music-detail {
+    flex: 3;
+    padding: 15px;
+}
+
+.section-music-player {
+    flex: 2;
+    padding: 15px;
+}
+
+.section-music-text {
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+audio {
+    width: 50vw;
+}
+
 /* ---------------------------------------------
 Video
 --------------------------------------------- */
+
+.videos {
+    width: 80vw;
+}
+
+.video-area {
+    display: flex;
+    justify-content: center;
+}
 
 /* ---------------------------------------------
 Footer
@@ -318,5 +382,26 @@ Footer
 
     .section-about {
         flex-direction: column;
+    }
+
+    .section-music {
+        flex-direction: column;
+    }
+
+    .section-music-text {
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+
+    .section-music-player {
+        margin-bottom: 20px;
+    }
+
+    audio {
+        width: 80vw;
+    }
+
+    .section-music-detail {
+        text-align: center;
     }
 }
