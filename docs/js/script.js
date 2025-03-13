@@ -1,11 +1,12 @@
+// slick関連
 $(function () {
-    $(".slider").slick({
-      autoplay: true,
-      dots: true,
-      prevArrow: '<button class="arrow-common arrow-prev"></button>',
-      nextArrow: '<button class="arrow-common arrow-next"></button>',
-    });
+  $(".slider").slick({
+    autoplay: true,
+    dots: true,
+    prevArrow: '<button class="arrow-common arrow-prev"></button>',
+    nextArrow: '<button class="arrow-common arrow-next"></button>',
   });
+});
 
 $(document).ready(function(){
   var music_captions = [
@@ -34,6 +35,7 @@ $(document).ready(function(){
   });
 });
 
+// ナビゲーションバーのスクロール
 $(function(){
   $('a[href^="#"]').click(function(){
     var header = $('nav').height();
