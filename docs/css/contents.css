@@ -171,9 +171,10 @@ Header
     justify-content: center;
     align-items: center;
     height: 50vh;
-    background-color: aquamarine;
     padding: 0 25px;
     padding-top: 68px;
+    background-size: cover;
+    background-position: center;
 }
 
 .header-genre, .header-name {
@@ -189,11 +190,13 @@ h1 {
 .header-name {
     font-size: 60px;
     font-weight: bold;
+    z-index: 3;
 }
 
 .header-genre {
     font-size: 20px;
     font-family: "Open sans", sans-serif;
+    z-index: 3;
 }
 
 .ca_font {
@@ -218,6 +221,53 @@ h1 {
 .music_font {
     font-family: "Open sans", sans-serif;
     letter-spacing: 1px;
+}
+
+.colorful-bg {
+    background-image: url('../img/Colorful Again.png');
+}
+
+.himo-bg {
+    background-image: url('../img/ヒモ勇者.png');
+}
+
+.musicrpg-bg {
+    background-image: url('../img/Music RPG.png');
+}
+
+.wq-bg {
+    background-image: url('../img/White Quest.png');
+}
+
+.hoshizora-bg {
+    background-image: url('../img/ほしぞらアート.png');
+}
+
+.mirror-bg {
+    background-image: url('../img/Mirror Drop.png');
+}
+
+.music-bg {
+    background-image: url('../img/Music1.png');
+}
+
+#header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+}
+
+.header-name,
+.header-genre {
+    position: relative;
+    z-index: 2;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
 }
 
 /* ---------------------------------------------
@@ -292,6 +342,7 @@ Details / Listen
 .section-music-text {
     font-size: 15px;
     margin-bottom: 40px;
+    text-align: left;
 }
 
 audio {
@@ -309,6 +360,13 @@ Video
 .video-area {
     display: flex;
     justify-content: center;
+}
+
+.section-video-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ---------------------------------------------
