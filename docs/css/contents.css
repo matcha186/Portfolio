@@ -369,6 +369,11 @@ Video
     align-items: center;
 }
 
+.youtube-video {
+    width: 50%;
+    aspect-ratio: 16 / 9;
+}
+
 /* ---------------------------------------------
 Footer
 --------------------------------------------- */
@@ -461,5 +466,10 @@ Footer
 
     .section-music-detail {
         text-align: center;
+    }
+
+    .youtube-video {
+        width: 100%;
+        aspect-ratio: 16 / 9;
     }
 }
